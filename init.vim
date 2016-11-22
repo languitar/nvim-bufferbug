@@ -7,10 +7,6 @@ end
 set nocompatible
 filetype off
 
-call plug#begin('~/.local/share/nvim/bundle/')
-
-Plug 'languitar/nvim-bufferbug'
-
-call plug#end()
+set runtimepath+=.
 
 filetype plugin indent on
