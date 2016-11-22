@@ -20,6 +20,7 @@ class IPythonPlugin(object):
         buf.options["buftype"] = "nofile"
         buf.name = "[jupyter]"
         vim.current.window = w0
+        self.buf = buf
 
     @neovim.function("BufferBugInit")
     def init(self, args):
